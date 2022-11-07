@@ -1,0 +1,38 @@
+<template>
+  <div class="channel-edit">
+    <van-cell title="我的频道" :border="false">
+      <van-button 
+        round 
+        size="mini"
+        type="danger">编辑</van-button>
+      </van-cell>
+      <van-grid :gutter="10">
+      <van-grid-item
+        class="channel-item"
+        v-for="value in 8"
+        :key="value"
+        text="文字"
+      />
+    </van-grid>
+    <!--  -->
+    <van-cell title="频道推荐" :border="false"></van-cell>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'ChannelEdit',
+  components: {},
+  props: {},
+  data () {
+    return {}
+  },
+  computed: {},
+  watch: {},
+  created () {},
+  mounted () {},
+  methods: {}
+}
+</script>
+
+<style scoped lang="less"></style>

@@ -78,10 +78,8 @@ export default {
       }
     },
     // 频道跳转
-   // this.$emit('update_MyChannel',this.active -1,true)
-
     update_MyChannel(index,isChannelEditShow = true){
-       this.active = this.active -1 
+       this.active = index
        this.isChannelEditShow = isChannelEditShow
     }
   }

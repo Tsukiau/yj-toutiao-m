@@ -96,7 +96,7 @@ export default {
          if(index <= this.active){
            this.$emit('update_MyChannel',this.active -1,true)
          }
-
+         
          this.myChannels.splice(index,1)
         
          if(this.user.token){

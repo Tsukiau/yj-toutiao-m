@@ -81,7 +81,7 @@ export default {
            await addUserChannel({
             id: item.id, // 频道 id
             seq: this.myChannels.length // 频道的序号
-           })        
+           })            
        }else {
          //未登录
          this['user/setCHANNELS'](this.myChannels)
@@ -92,11 +92,9 @@ export default {
        if(this.isEditShow){
          // 删除
          if(index === 0) return 
-
          if(index <= this.active){
            this.$emit('update_MyChannel',this.active -1,true)
          }
-
          this.myChannels.splice(index,1)
         
          if(this.user.token){

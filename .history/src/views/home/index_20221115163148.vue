@@ -81,7 +81,7 @@ export default {
    // this.$emit('update_MyChannel',this.active -1,true)
 
     update_MyChannel(index,isChannelEditShow = true){
-       this.active = this.active -1 
+       this.active = this.active -1
        this.isChannelEditShow = isChannelEditShow
     }
   }

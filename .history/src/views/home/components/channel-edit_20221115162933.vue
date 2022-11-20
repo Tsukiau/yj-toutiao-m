@@ -94,7 +94,7 @@ export default {
          if(index === 0) return 
 
          if(index <= this.active){
-           this.$emit('update_MyChannel',this.active -1,true)
+           this.$emit('update_MyChannel',this.active,true)
          }
 
          this.myChannels.splice(index,1)
